@@ -15,6 +15,8 @@
 		3A0391071C5B0F02005F2BA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0391051C5B0F02005F2BA6 /* LaunchScreen.storyboard */; };
 		3A0391121C5B0F02005F2BA6 /* ganhuoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0391111C5B0F02005F2BA6 /* ganhuoSwiftTests.swift */; };
 		3A03911D1C5B0F02005F2BA6 /* ganhuoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A03911C1C5B0F02005F2BA6 /* ganhuoSwiftUITests.swift */; };
+		3A0A72761C5F4B170088E89D /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0A72741C5F4B170088E89D /* AlamofireObjectMapper.framework */; };
+		3A0A72771C5F4B170088E89D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0A72751C5F4B170088E89D /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3A0391181C5B0F02005F2BA6 /* ganhuoSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ganhuoSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A03911C1C5B0F02005F2BA6 /* ganhuoSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ganhuoSwiftUITests.swift; sourceTree = "<group>"; };
 		3A03911E1C5B0F02005F2BA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A0A72741C5F4B170088E89D /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
+		3A0A72751C5F4B170088E89D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0A72761C5F4B170088E89D /* AlamofireObjectMapper.framework in Frameworks */,
+				3A0A72771C5F4B170088E89D /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +85,8 @@
 		3A0390EE1C5B0F02005F2BA6 = {
 			isa = PBXGroup;
 			children = (
+				3A0A72741C5F4B170088E89D /* AlamofireObjectMapper.framework */,
+				3A0A72751C5F4B170088E89D /* RxSwift.framework */,
 				3A0390F91C5B0F02005F2BA6 /* ganhuoSwift */,
 				3A0391101C5B0F02005F2BA6 /* ganhuoSwiftTests */,
 				3A03911B1C5B0F02005F2BA6 /* ganhuoSwiftUITests */,
@@ -99,6 +107,7 @@
 		3A0390F91C5B0F02005F2BA6 /* ganhuoSwift */ = {
 			isa = PBXGroup;
 			children = (
+				3A0A72781C5F4BFD0088E89D /* http */,
 				3A0390FA1C5B0F02005F2BA6 /* AppDelegate.swift */,
 				3A0390FC1C5B0F02005F2BA6 /* FirstViewController.swift */,
 				3A0390FE1C5B0F02005F2BA6 /* SecondViewController.swift */,
@@ -128,6 +137,13 @@
 			path = ganhuoSwiftUITests;
 			sourceTree = "<group>";
 		};
+		3A0A72781C5F4BFD0088E89D /* http */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = http;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +154,7 @@
 				3A0390F31C5B0F02005F2BA6 /* Sources */,
 				3A0390F41C5B0F02005F2BA6 /* Frameworks */,
 				3A0390F51C5B0F02005F2BA6 /* Resources */,
+				3A0A72631C5F48100088E89D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -254,6 +271,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A0A72631C5F48100088E89D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireObjectMapper.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3A0390F31C5B0F02005F2BA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -352,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -390,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -401,7 +438,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ganhuoSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = git.dzc.ganhuoSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,7 +454,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ganhuoSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = git.dzc.ganhuoSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -486,6 +533,7 @@
 				3A0391231C5B0F02005F2BA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A0391241C5B0F02005F2BA6 /* Build configuration list for PBXNativeTarget "ganhuoSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +542,7 @@
 				3A0391261C5B0F02005F2BA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3A0391271C5B0F02005F2BA6 /* Build configuration list for PBXNativeTarget "ganhuoSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +551,7 @@
 				3A0391291C5B0F02005F2BA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
