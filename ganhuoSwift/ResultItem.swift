@@ -6,9 +6,9 @@
 //  Copyright (c) dzc. All rights reserved.
 //
 
-import UIKit
 
-class ResultItem: NSObject {
+import ObjectMapper
+class ResultItem: Mappable {
 
     var updatedAt: String?
 
@@ -27,5 +27,20 @@ class ResultItem: NSObject {
     var desc: String?
 
     var url: String?
+    required init?(_ map: Map){
+        
+    }
+    
+    func mapping(map: Map) {
+        updatedAt <- map["updateAt"]
+        who <- map["who"]
+        publishedAt <- map["publishedAt"]
+        objectId <- map["objectId"]
+        used <- map["used"]
+        type <- map["type"]
+        createdAt <- map["createdAt"]
+        desc <- map["desc"]
+        url <- map["url"]
+    }
 
 }

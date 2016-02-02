@@ -15,10 +15,21 @@
 		3A0391071C5B0F02005F2BA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0391051C5B0F02005F2BA6 /* LaunchScreen.storyboard */; };
 		3A0391121C5B0F02005F2BA6 /* ganhuoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0391111C5B0F02005F2BA6 /* ganhuoSwiftTests.swift */; };
 		3A03911D1C5B0F02005F2BA6 /* ganhuoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A03911C1C5B0F02005F2BA6 /* ganhuoSwiftUITests.swift */; };
-		3A0A72761C5F4B170088E89D /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0A72741C5F4B170088E89D /* AlamofireObjectMapper.framework */; };
-		3A0A72771C5F4B170088E89D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0A72751C5F4B170088E89D /* RxSwift.framework */; };
+		3A08253D1C608CB500CBBE89 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5E82AF1C606C1B00E0C50B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A08253F1C608CB500CBBE89 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5E82B01C606C1B00E0C50B /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A0825401C608CB500CBBE89 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5E82AB1C60681C00E0C50B /* AlamofireObjectMapper.framework */; };
+		3A0825411C608CB500CBBE89 /* AlamofireObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5E82AB1C60681C00E0C50B /* AlamofireObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A0825441C608D2E00CBBE89 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0825431C608D2E00CBBE89 /* RxSwift.framework */; };
+		3A0825451C608D3600CBBE89 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0825431C608D2E00CBBE89 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A0825481C60977800CBBE89 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0825461C60977800CBBE89 /* RxBlocking.framework */; };
+		3A0825491C60977800CBBE89 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0825471C60977800CBBE89 /* RxCocoa.framework */; };
+		3A08254A1C60978800CBBE89 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0825461C60977800CBBE89 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A08254B1C60978800CBBE89 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0825471C60977800CBBE89 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3A5E829F1C5F6ACC00E0C50B /* DataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E829D1C5F6ACC00E0C50B /* DataResult.swift */; };
 		3A5E82A01C5F6ACC00E0C50B /* ResultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E829E1C5F6ACC00E0C50B /* ResultItem.swift */; };
+		3A5E82A21C60657500E0C50B /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E82A11C60657500E0C50B /* HttpManager.swift */; };
+		3A5E82B11C606C1B00E0C50B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5E82AF1C606C1B00E0C50B /* Alamofire.framework */; };
+		3A5E82B21C606C1B00E0C50B /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A5E82B01C606C1B00E0C50B /* ObjectMapper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +49,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3A0825421C608CB500CBBE89 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3A08254A1C60978800CBBE89 /* RxBlocking.framework in Embed Frameworks */,
+				3A08254B1C60978800CBBE89 /* RxCocoa.framework in Embed Frameworks */,
+				3A0825451C608D3600CBBE89 /* RxSwift.framework in Embed Frameworks */,
+				3A08253F1C608CB500CBBE89 /* ObjectMapper.framework in Embed Frameworks */,
+				3A0825411C608CB500CBBE89 /* AlamofireObjectMapper.framework in Embed Frameworks */,
+				3A08253D1C608CB500CBBE89 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3A0390F71C5B0F02005F2BA6 /* ganhuoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ganhuoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A0390FA1C5B0F02005F2BA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,10 +83,15 @@
 		3A0391181C5B0F02005F2BA6 /* ganhuoSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ganhuoSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A03911C1C5B0F02005F2BA6 /* ganhuoSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ganhuoSwiftUITests.swift; sourceTree = "<group>"; };
 		3A03911E1C5B0F02005F2BA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A0A72741C5F4B170088E89D /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
-		3A0A72751C5F4B170088E89D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		3A0825431C608D2E00CBBE89 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		3A0825461C60977800CBBE89 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		3A0825471C60977800CBBE89 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		3A5E829D1C5F6ACC00E0C50B /* DataResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataResult.swift; sourceTree = "<group>"; };
 		3A5E829E1C5F6ACC00E0C50B /* ResultItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultItem.swift; sourceTree = "<group>"; };
+		3A5E82A11C60657500E0C50B /* HttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
+		3A5E82AB1C60681C00E0C50B /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
+		3A5E82AF1C606C1B00E0C50B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		3A5E82B01C606C1B00E0C50B /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +99,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A0A72761C5F4B170088E89D /* AlamofireObjectMapper.framework in Frameworks */,
-				3A0A72771C5F4B170088E89D /* RxSwift.framework in Frameworks */,
+				3A0825491C60977800CBBE89 /* RxCocoa.framework in Frameworks */,
+				3A5E82B11C606C1B00E0C50B /* Alamofire.framework in Frameworks */,
+				3A0825401C608CB500CBBE89 /* AlamofireObjectMapper.framework in Frameworks */,
+				3A5E82B21C606C1B00E0C50B /* ObjectMapper.framework in Frameworks */,
+				3A0825481C60977800CBBE89 /* RxBlocking.framework in Frameworks */,
+				3A0825441C608D2E00CBBE89 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,8 +128,12 @@
 		3A0390EE1C5B0F02005F2BA6 = {
 			isa = PBXGroup;
 			children = (
-				3A0A72741C5F4B170088E89D /* AlamofireObjectMapper.framework */,
-				3A0A72751C5F4B170088E89D /* RxSwift.framework */,
+				3A0825461C60977800CBBE89 /* RxBlocking.framework */,
+				3A0825471C60977800CBBE89 /* RxCocoa.framework */,
+				3A0825431C608D2E00CBBE89 /* RxSwift.framework */,
+				3A5E82AF1C606C1B00E0C50B /* Alamofire.framework */,
+				3A5E82B01C606C1B00E0C50B /* ObjectMapper.framework */,
+				3A5E82AB1C60681C00E0C50B /* AlamofireObjectMapper.framework */,
 				3A0390F91C5B0F02005F2BA6 /* ganhuoSwift */,
 				3A0391101C5B0F02005F2BA6 /* ganhuoSwiftTests */,
 				3A03911B1C5B0F02005F2BA6 /* ganhuoSwiftUITests */,
@@ -145,6 +188,7 @@
 		3A0A72781C5F4BFD0088E89D /* http */ = {
 			isa = PBXGroup;
 			children = (
+				3A5E82A11C60657500E0C50B /* HttpManager.swift */,
 			);
 			name = http;
 			sourceTree = "<group>";
@@ -169,6 +213,7 @@
 				3A0390F41C5B0F02005F2BA6 /* Frameworks */,
 				3A0390F51C5B0F02005F2BA6 /* Resources */,
 				3A0A72631C5F48100088E89D /* ShellScript */,
+				3A0825421C608CB500CBBE89 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -221,6 +266,7 @@
 		3A0390EF1C5B0F02005F2BA6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = dzc;
@@ -292,9 +338,6 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/AlamofireObjectMapper.framework",
 			);
 			outputPaths = (
@@ -313,6 +356,7 @@
 				3A5E82A01C5F6ACC00E0C50B /* ResultItem.swift in Sources */,
 				3A5E829F1C5F6ACC00E0C50B /* DataResult.swift in Sources */,
 				3A0390FF1C5B0F02005F2BA6 /* SecondViewController.swift in Sources */,
+				3A5E82A21C60657500E0C50B /* HttpManager.swift in Sources */,
 				3A0390FB1C5B0F02005F2BA6 /* AppDelegate.swift in Sources */,
 				3A0390FD1C5B0F02005F2BA6 /* FirstViewController.swift in Sources */,
 			);
@@ -389,6 +433,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -433,6 +478,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -453,32 +499,38 @@
 		3A0391221C5B0F02005F2BA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)";
 				INFOPLIST_FILE = ganhuoSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = git.dzc.ganhuoSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
 			};
 			name = Debug;
 		};
 		3A0391231C5B0F02005F2BA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)";
 				INFOPLIST_FILE = ganhuoSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = git.dzc.ganhuoSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)";
 			};
 			name = Release;
 		};

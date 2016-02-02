@@ -6,12 +6,20 @@
 //  Copyright (c) dzc. All rights reserved.
 //
 
-import UIKit
 
-class DataResult: NSObject {
+import ObjectMapper
+class DataResult: Mappable {
 
     var error: Bool = false
 
     var results: [ResultItem]?
 
+    required init?(_ map: Map){
+        
+    }
+    
+    func mapping(map: Map) {
+        error <- map["error"]
+        results <- map["results"]
+    }
 }
