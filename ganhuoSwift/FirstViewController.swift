@@ -12,6 +12,7 @@ import Alamofire
 import RxSwift
 import RxCocoa
 
+
 class FirstViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource{
 
     var dataList:[ResultItem] = [];
@@ -20,7 +21,7 @@ class FirstViewController: UIViewController ,UITableViewDelegate,UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        Alamofire.request(.GET, "http://gank.avosapps.com/api/data/iOS/20/2").responseObject{
+        Alamofire.request(.GET, "http://gank.avosapps.com/api/data/%e7%a6%8f%e5%88%a9/20/2").responseObject{
             (response:Response<DataResult,NSError>) in
             let results = response.result.value?.results!
             self.dataList = results!
@@ -41,11 +42,12 @@ class FirstViewController: UIViewController ,UITableViewDelegate,UITableViewData
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellIdentifier = "Cell"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath:
-            indexPath) as UITableViewCell
+            indexPath) as! CustomTableViewCell
         // Configure the cell...
         let item = dataList[indexPath.row]
-        cell.textLabel!.text = item.desc!
-        cell.detailTextLabel!.text = "\(item.who!)  \(item.createdAt!)"
+        cell.titleLabel!.text = item.desc!
+        cell.descLabel!.text = "\(item.who!)  \(item.createdAt!)"
+        cell.img.image = UIImage(data: NSData(contentsOfURL: NSURL(string: item.url!)!)!)
         return cell
     }
 

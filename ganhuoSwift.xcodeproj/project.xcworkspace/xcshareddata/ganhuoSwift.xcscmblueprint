@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3C472D1F0A985CDDBEB3B9E7A135A9195769E017",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3C472D1F0A985CDDBEB3B9E7A135A9195769E017" : 0,
+    "E2F476CE895D3596DBE8080E8F363F8F94823E70" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8B87D61D-2AA1-42D9-BA0D-92D473BFDA75",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3C472D1F0A985CDDBEB3B9E7A135A9195769E017" : "ganhuoSwift\/",
+    "E2F476CE895D3596DBE8080E8F363F8F94823E70" : "ganhuoSwift\/ExSwift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ganhuoSwift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ganhuoSwift.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/duzechao\/ganhuoSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3C472D1F0A985CDDBEB3B9E7A135A9195769E017"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pNre\/ExSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E2F476CE895D3596DBE8080E8F363F8F94823E70"
+    }
+  ]
+}

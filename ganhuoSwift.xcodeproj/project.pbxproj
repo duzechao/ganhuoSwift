@@ -25,6 +25,7 @@
 		3A0825491C60977800CBBE89 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0825471C60977800CBBE89 /* RxCocoa.framework */; };
 		3A08254A1C60978800CBBE89 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0825461C60977800CBBE89 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3A08254B1C60978800CBBE89 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0825471C60977800CBBE89 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A0825E41C61A33A00CBBE89 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0825E31C61A33A00CBBE89 /* CustomTableViewCell.swift */; };
 		3A5E829F1C5F6ACC00E0C50B /* DataResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E829D1C5F6ACC00E0C50B /* DataResult.swift */; };
 		3A5E82A01C5F6ACC00E0C50B /* ResultItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E829E1C5F6ACC00E0C50B /* ResultItem.swift */; };
 		3A5E82A21C60657500E0C50B /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E82A11C60657500E0C50B /* HttpManager.swift */; };
@@ -86,6 +87,7 @@
 		3A0825431C608D2E00CBBE89 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		3A0825461C60977800CBBE89 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		3A0825471C60977800CBBE89 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		3A0825E31C61A33A00CBBE89 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		3A5E829D1C5F6ACC00E0C50B /* DataResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataResult.swift; sourceTree = "<group>"; };
 		3A5E829E1C5F6ACC00E0C50B /* ResultItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultItem.swift; sourceTree = "<group>"; };
 		3A5E82A11C60657500E0C50B /* HttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				3A0391031C5B0F02005F2BA6 /* Assets.xcassets */,
 				3A0391051C5B0F02005F2BA6 /* LaunchScreen.storyboard */,
 				3A0391081C5B0F02005F2BA6 /* Info.plist */,
+				3A0825E31C61A33A00CBBE89 /* CustomTableViewCell.swift */,
 			);
 			path = ganhuoSwift;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				3A5E82A01C5F6ACC00E0C50B /* ResultItem.swift in Sources */,
 				3A5E829F1C5F6ACC00E0C50B /* DataResult.swift in Sources */,
 				3A0390FF1C5B0F02005F2BA6 /* SecondViewController.swift in Sources */,
+				3A0825E41C61A33A00CBBE89 /* CustomTableViewCell.swift in Sources */,
 				3A5E82A21C60657500E0C50B /* HttpManager.swift in Sources */,
 				3A0390FB1C5B0F02005F2BA6 /* AppDelegate.swift in Sources */,
 				3A0390FD1C5B0F02005F2BA6 /* FirstViewController.swift in Sources */,
@@ -500,13 +504,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)";
 				INFOPLIST_FILE = ganhuoSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = git.dzc.ganhuoSwift;
@@ -519,13 +524,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				HEADER_SEARCH_PATHS = "$(SRCROOT)";
 				INFOPLIST_FILE = ganhuoSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = git.dzc.ganhuoSwift;
